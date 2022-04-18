@@ -115,7 +115,7 @@
 									<div class="about-desc">
 										<span class="heading-meta">About Me</span>
 										<h2 class="colorlib-heading">"깔끔한 코드를 지향하는 iOS 앱 개발자"</h2>
-										<p><strong>"안녕하세요. 깔끔한 코드를 지향하는 신입 iOS 앱 개발자 장현우입니다."</strong></p> <p>• 대학교에서 R과 Python을 공부하면서 개발 분야에 관심이 생겼고 iOS 앱 개발을 공부하면서 개발의 즐거움을 깨달았습니다.</p> <p>• Clean Code에 관심 있으며 가독성이 높은 코드를 작성하려고 노력합니다.</p> <p>• 코드를 통해 기능 구현이 완료되는 단계에서 그치는 것이 아니라 어떻게 하면 좀 더 효율적이고 깔끔한 코드를 짤 수 있을까 다시 한번 고민합니다.</p> <p>• 음악 듣는 것과 기타 연주하는 걸 좋아합니다.
+										<p><strong>"안녕하세요. 깔끔한 코드를 지향하는 신입 iOS 앱 개발자 장현우입니다."</strong></p> <p>• 대학교에서 R과 Python을 공부하면서 개발 분야에 관심이 생겼고 iOS 앱 개발을 공부하면서 개발의 즐거움을 깨달았습니다.</p> <p>• Clean Code에 관심 있으며 가독성 높은 코드를 작성하려고 노력합니다.</p> <p>• 코드를 통해 기능 구현이 완료되는 단계에서 그치는 것이 아니라 어떻게 하면 좀 더 효율적이고 깔끔한 코드를 짤 수 있을까 다시 한번 고민합니다.</p> <p>• 음악 듣는 것과 기타 연주하는 걸 좋아합니다.
 									</div>
 								</div>
 							</div>
@@ -177,7 +177,7 @@
 								    <span>30%</span>
 								  	</div>
 								</div>
-                                C# 언어를 이용해서 서버 코드를 작성하였습니다.<br>
+                                C# 언어를 이용해 서버 코드를 작성하였습니다.<br>
                                 REST API와 소셜 로그인 기능을 구현할 수 있습니다.
 							</div>
                             </p> <p>
@@ -254,6 +254,75 @@
 							</div>
 						</div>
 					</div>
+                    <strong>프로젝트를 하면서 어려웠던 점과 해결 방안</strong>
+                    <div class="row">
+                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="fancy-collapse-panel">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="row">
+                                                <div class="col-md-12">
+                                                 <div class="timeline-centered">
+                                                     <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                                        <div class="timeline-entry-inner">
+                                                           <div class="timeline-icon color-2">
+                                                              <i class="icon-pen2"></i>
+                                                           </div>
+                                                           <div class="timeline-label">
+                                                               <h2><a href="https://mittelstand.co.kr/" target="_blank">영화 이미지 다운로드</a> </h2>
+                                                               <p><strong>• 문제:</strong>서버에서 이미지 URL을 받고 다시 그 이미지 URL을 파싱해서 이미지를 가져오는 부분이 잘 풀리지 않았습니다.</p> <p>
+                                                               <strong>• 해결 방안:</strong> 이미지 데이터를 관리하는 매니저 클래스를 따로 만들어서 해결했습니다. 셀을 로딩하는 시점에는 이미지 URL 정보를 알고 있으므로 데이터를 먼저 가져온 다음에 셀을 로딩하는 시점에 백그라운드에서 이미지를 다운로드하도록 구현했습니다.</strong>
+                                                               </p>
+                                                           </div>
+                                                        </div>
+                                                     </article>
+                                                     
+                                                     <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                                        <div class="timeline-entry-inner">
+
+                                                           <div class="timeline-icon color-1">
+                                                              <i class="icon-pen2"></i>
+                                                           </div>
+
+                                                           <div class="timeline-label">
+                                                              <h2><a href="https://mittelstand.co.kr/" target="_blank">테이블뷰 안에 있는 컬렉션뷰의 인덱스를 메인 화면에 가져오기</a></h2>
+                                                              <p><strong>• 문제:</strong> 테이블뷰 안에 있는 컬렉션뷰의 인덱스를 메인 화면에 가져와 해당 인덱스에 맞는 영화 이미지를 네트워크 통신을 통해 가져와야 하는데 올바른 인덱스를 가져오기가 어려웠습니다.</p> <p>
+                                                              <strong>• 해결 방안:</strong> 프로토콜을 사용하여 문제를 해결했습니다. 구글링하다가 프로토콜이 상속으로 멀리 떨어져 있는 두 클래스가 특정 목표를 달성하기 위해 서로 통신할 수 있도록 한다는 걸 알게 되었습니다. 그래서 CollectionViewCellDelegate 프로토콜을 만들어서 테이블뷰에 속성으로 선언한 후 메인 화면 뷰컨트롤러를 대리자로 지정했습니다. 그 후 메인 화면 뷰컨트롤러에서 해당하는 작업을 처리했습니다.</strong>
+                                                              </p>
+                                                              
+                                                           </div>
+                                                        </div>
+                                                     </article>
+
+                                                     <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                                                        <div class="timeline-entry-inner">
+                                                           <div class="timeline-icon color-none">
+                                                           </div>
+                                                        </div>
+                                                     </article>
+                                                  </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    <strong>프로젝트를 하면서 느낀점</strong>
+                    <section class="colorlib-about" data-section="about">
+                        <div class="colorlib-narrow-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                        <div class="col-md-12">
+                                            <div class="about-desc">
+                                                 <p>• 사용자 관점에서 어떻게 하면 앱을 좀 더 편리하게 사용할 수 있을지 많이 생각해보게 되었습니다.</p> <p>• 앱을 혼자 만들어보면서 앱에 전체적인 과정을 경험해볼 수 있었습니다. </p> <p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     
 					<div class="animate-box" data-animate-effect="fadeInTop">
 					<strong>팀프로젝트</strong>
@@ -282,6 +351,60 @@
 							</div>
 						</div>
 					</div>
+                    <strong>프로젝트를 하면서 어려웠던 점과 해결 방안</strong>
+                    <div class="row">
+                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="fancy-collapse-panel">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="row">
+                                                <div class="col-md-12">
+                                                 <div class="timeline-centered">
+                                                     <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                                        <div class="timeline-entry-inner">
+                                                           <div class="timeline-icon color-2">
+                                                              <i class="icon-pen2"></i>
+                                                           </div>
+                                                           <div class="timeline-label">
+                                                               <h2><a href="https://mittelstand.co.kr/" target="_blank">가게 정보 필터링 기능</a> </h2>
+                                                               <p><strong>• 문제:</strong> 셀에 선택된 필터링 항목을 뷰컨트롤러에 가져오는 과정에서 셀에 있는 데이터가 뷰컨트롤러로 잘 전달되지 않았습니다.</p> <p>
+                                                               <strong>• 해결 방안: </strong> cellForRow(at:) 메소드를 이용해 해당 IndexPath에 있는 셀을 가져온 후 셀에 접근해서 데이터를 가져오는 것으로 해결했습니다. 셀에 직접 접근해서 처리하는 것은 마지막 수단으로 남겨둬야 한다고 배웠습니다. 하지만 Notification, 델리게이트 패턴 등 여러 가지 방법을 시도해본 결과, 해결되지 않았기 때문에 직접 접근하는 방법을 사용했습니다. </strong>
+                                                               </p>
+                                                           </div>
+                                                        </div>
+                                                     </article>
+
+                                                     <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                                                        <div class="timeline-entry-inner">
+                                                           <div class="timeline-icon color-none">
+                                                           </div>
+                                                        </div>
+                                                     </article>
+                                                  </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    <strong>프로젝트를 하면서 느낀점</strong>
+                    <section class="colorlib-about" data-section="about">
+                        <div class="colorlib-narrow-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                        <div class="col-md-12">
+                                            <div class="about-desc">
+                                                <p>• git을 이용해서 소스 코드를 관리하면서 git 컴플릭트 해결 방법과 브랜치를 이용해 작업하는 방법 등을 배웠습니다.</p> <p>• 서로 의견을 공유하고 기능을 완성해 나가는 과정에서 다른 사람과의 커뮤니케이션의 중요성을 알 수 있었습니다. </p> <p>• 문서화 주석의 중요성에 대해서 깨달았고 다른 사람이 봤을 때 유용한 주석을 작성하는 방법에 대해서 고민할 수 있었습니다. </p> <p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    
 					<div class="row">
 						<div class="col-md-12 animate-box">
 							<p><a href="#" onclick="return false;" class="btn btn-primary btn-lg btn-load-more"> 앞으로 더 많은 프로젝트가 추가될 예정입니다:)</a></p>
