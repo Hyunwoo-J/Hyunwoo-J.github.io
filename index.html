@@ -381,7 +381,8 @@
                                                            <div class="timeline-label">
                                                                <h2><a>한 화면에서 탭 구분</a> </h2>
                                                                <p><strong>• 문제:</strong> 가게 정보 화면에서 탭을 구분해서 출력하는 걸 구현하는 게 어려웠습니다.(정보탭과 리뷰탭)</p> <p>
-                                                               <strong>• 해결 방안: </strong> 화면 탭 버튼을 하나의 메소드에 연결한 후 sender의 tag를 이용하는 방법으로 해결했습니다. sender의 tag를 서로 다르게 지정해서 해당하는 tag에 알맞은 정보를 Notification을 이용해서 보내고 그 정보를 하위 탭을 관리하는 테이블뷰 셀이 전달받아 처리하도록 구현했습니다.  </strong>
+                                                               <strong>• 해결 방안: </strong> 화면 탭 버튼을 하나의 메소드에 연결한 후 sender의 tag를 이용하는 방법으로 해결했습니다. sender의 tag를 서로 다르게 지정해서 해당하는 tag에 알맞은 정보를 notification을 이용해서 보내고 그 정보를 하위 탭을 관리하는 테이블뷰 셀이 전달받아 처리하도록 구현했습니다.  </strong></strong></p> <p>
+                                                               <strong>• 관련 코드:</strong><a href="https://wiggly-subway-73d.notion.site/fc26d5d007f848b28c380882f6b97899" target="_blank"> https://wiggly-subway-73d.notion.site/fc26d5d007f848b28c380882f6b97899</a></strong>
                                                                </p>
                                                            </div>
                                                         </div>
@@ -395,11 +396,28 @@
                                                            <div class="timeline-label">
                                                                <h2><a>가게 정보 필터링 기능</a> </h2>
                                                                <p><strong>• 문제:</strong> 테이블뷰 셀에 선택된 필터링 항목을 뷰컨트롤러에 가져오는 과정에서 셀에 있는 데이터가 뷰컨트롤러로 잘 전달되지 않았습니다.</p> <p>
-                                                               <strong>• 해결 방안: </strong> cellForRow(at:) 메소드를 이용해 해당 IndexPath에 있는 테이블뷰 셀을 가져온 후 셀에 접근해서 데이터를 가져오는 것으로 해결했습니다. 셀에 직접 접근해서 처리하는 것은 마지막 수단으로 남겨둬야 한다고 배웠습니다. 하지만 Notification, 델리게이트 패턴 등 여러 가지 방법을 시도해본 결과, 해결되지 않았기 때문에 직접 접근하는 방법을 사용했습니다. </strong>
+                                                               <strong>• 해결 방안: </strong> cellForRow(at:) 메소드를 이용해 해당 IndexPath에 있는 테이블뷰 셀을 가져온 후 셀에 접근해서 데이터를 가져오는 것으로 해결했습니다. 셀에 직접 접근해서 처리하는 것은 마지막 수단으로 남겨둬야 한다고 배웠습니다. 하지만 notification, 델리게이트 패턴 등 여러 가지 방법을 시도해본 결과, 해결되지 않았기 때문에 직접 접근하는 방법을 사용했습니다. </strong></p> <p>
+                                                               <strong>• 관련 코드:</strong><a href="https://wiggly-subway-73d.notion.site/3c6ed33f38384ed2ae9567a326a433ad" target="_blank"> https://wiggly-subway-73d.notion.site/3c6ed33f38384ed2ae9567a326a433ad</a></strong>
                                                                </p>
                                                            </div>
                                                         </div>
                                                      </article>
+                                                     
+                                                     <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                                        <div class="timeline-entry-inner">
+                                                           <div class="timeline-icon color-3">
+                                                              <i class="icon-pen2"></i>
+                                                           </div>
+                                                           <div class="timeline-label">
+                                                               <h2><a>필터링 항목의 선택 상태에 따른 색상 변경</a> </h2>
+                                                               <p><strong>• 문제:</strong> 필터링할 항목의 선택 상태에 따라 배경색을 변경되도록 구현하려고 하는데 어떤 걸 기준으로 선택 상태를 구분할지 고민했습니다.</p> <p>
+                                                               <strong>• 해결 방안: </strong> 간단하게 생각해서 필터링 항목의 현재 색상을 기준으로 구분했습니다. 현재 필터링 항목의 UI를 감싸고 있는 컨테이너뷰의 색상을 기준으로 색상이 검정이면 선택되지 않은 상태, 빨강이면 선택된 상태로 구분했습니다. </strong></p> <p>
+                                                               <strong>• 관련 코드:</strong><a href="https://wiggly-subway-73d.notion.site/6cac505e50614160b3066aa7c314331a" target="_blank"> https://wiggly-subway-73d.notion.site/6cac505e50614160b3066aa7c314331a</a></strong>
+                                                               </p>
+                                                           </div>
+                                                        </div>
+                                                     </article>
+
 
                                                      <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
                                                         <div class="timeline-entry-inner">
