@@ -152,8 +152,9 @@
                                 AutoLayout에 대해 이해하고 있으며 코드와 스토리보드를 활용하여 UI를 구성할 수 있습니다. (선호하는 방식은 스토리보드방식입니다.)<br>
                                 동기와 비동기를 이해하고 있으며 Dispatch Queue를 활용해 프로젝트에 사용할 수 있습니다.<br>
                                 RESTful API를 이용하여 네트워킹을 구현할 수 있습니다.<br>
-                                CocoaPods을 이용해서 외부 라이브러리를 활용할 수 있습니다.
-                                (RxSwift, Moya, KeychainSwift, Loaf 등)<br>
+                                CocoaPods을 이용해서 외부 라이브러리를 활용할 수 있습니다.<br>
+                                </p> <p>
+                                사용해본 라이브러리 목록: RxSwift, RxCocoa, Moya/RxSwift, KeychainSwift, Loaf 등)<br>
                                 
                             </div>
                         </div>
@@ -256,13 +257,14 @@
                                                  <div class="timeline-centered">
                                                      <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
                                                         <div class="timeline-entry-inner">
-                                                           <div class="timeline-icon color-2">
+                                                           <div class="timeline-icon color-1">
                                                               <i class="icon-pen2"></i>
                                                            </div>
                                                            <div class="timeline-label">
-                                                               <h2><a href="https://mittelstand.co.kr/" target="_blank">영화 이미지 다운로드</a> </h2>
+                                                               <h2><a>영화 이미지 다운로드</a> </h2>
                                                                <p><strong>• 문제:</strong> 서버에서 이미지 URL을 받고 다시 그 이미지 URL을 파싱해서 이미지를 가져오는 부분이 잘 풀리지 않았습니다.</p> <p>
-                                                               <strong>• 해결 방안:</strong> 이미지 데이터를 관리하는 매니저 클래스를 따로 만들어서 해결했습니다. 셀을 로딩하는 시점에는 이미지 URL 정보를 알고 있으므로 데이터를 먼저 가져온 다음에 셀을 로딩하는 시점에 백그라운드에서 이미지를 다운로드하도록 구현했습니다.</strong>
+                                                               <strong>• 해결 방안:</strong> 이미지 데이터를 관리하는 매니저 클래스를 따로 만들어서 해결했습니다. 셀을 로딩하는 시점에는 이미지 URL 정보를 알고 있으므로 데이터를 먼저 가져온 다음에 셀을 로딩하는 시점에 백그라운드에서 이미지를 다운로드하도록 구현했습니다.</strong></p> <p>
+                                                               <strong>• 관련 코드:</strong><a href="https://wiggly-subway-73d.notion.site/1e10298ba8b64a08bc0b0e19b1f35107" target="_blank"> https://wiggly-subway-73d.notion.site/1e10298ba8b64a08bc0b0e19b1f35107</a></strong>
                                                                </p>
                                                            </div>
                                                         </div>
@@ -271,16 +273,33 @@
                                                      <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
                                                         <div class="timeline-entry-inner">
 
-                                                           <div class="timeline-icon color-1">
+                                                           <div class="timeline-icon color-2">
                                                               <i class="icon-pen2"></i>
                                                            </div>
 
                                                            <div class="timeline-label">
-                                                              <h2><a href="https://mittelstand.co.kr/" target="_blank">테이블뷰 안에 있는 컬렉션뷰의 인덱스를 메인 화면에 가져오기</a></h2>
+                                                              <h2><a>테이블뷰 안에 있는 컬렉션뷰의 인덱스를 메인 화면에 가져오기</a></h2>
                                                               <p><strong>• 문제:</strong> 테이블뷰 안에 있는 컬렉션뷰의 인덱스를 메인 화면에 가져와 해당 인덱스에 맞는 영화 이미지를 네트워크 통신을 통해 가져와야 하는데 올바른 인덱스를 가져오기가 어려웠습니다.</p> <p>
-                                                              <strong>• 해결 방안:</strong> 프로토콜을 사용하여 문제를 해결했습니다. 구글링하다가 프로토콜이 상속으로 멀리 떨어져 있는 두 클래스가 특정 목표를 달성하기 위해 서로 통신할 수 있도록 한다는 걸 알게 되었습니다. 그래서 CollectionViewCellDelegate 프로토콜을 만들어서 테이블뷰에 속성으로 선언한 후 메인 화면 뷰컨트롤러를 대리자로 지정했습니다. 그 후 메인 화면 뷰컨트롤러에서 해당하는 작업을 처리했습니다.</strong>
+                                                              <strong>• 해결 방안:</strong> 프로토콜을 사용하여 문제를 해결했습니다. 구글링하다가 프로토콜이 상속으로 멀리 떨어져 있는 두 클래스가 특정 목표를 달성하기 위해 서로 통신할 수 있도록 한다는 걸 알게 되었습니다. 그래서 CollectionViewCellDelegate 프로토콜을 만들어서 테이블뷰에 속성으로 선언한 후 메인 화면 뷰컨트롤러를 대리자로 지정했습니다. 그 후 메인 화면 뷰컨트롤러에서 해당하는 작업을 처리했습니다.</strong></p> <p>
+                                                              <strong>• 관련 코드:</strong><a href="https://wiggly-subway-73d.notion.site/925518b935834f7b820174a65731c13e" target="_blank"> https://wiggly-subway-73d.notion.site/925518b935834f7b820174a65731c13e</a></strong>
                                                               </p>
-                                                              
+                                                           </div>
+                                                        </div>
+                                                     </article>
+                                                     
+                                                     <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                                        <div class="timeline-entry-inner">
+
+                                                           <div class="timeline-icon color-3">
+                                                              <i class="icon-pen2"></i>
+                                                           </div>
+
+                                                           <div class="timeline-label">
+                                                              <h2><a>백그라운드 화면에 Dim View 넣기</a></h2>
+                                                              <p><strong>• 문제:</strong> 리뷰 작성 화면을 띄울 때 백그라운드 화면에 Dim View를 추가하고 화면이 내려가면 Dim View를 삭제하는 기능을 구현하기가 어려웠습니다.</p> <p>
+                                                              <strong>• 해결 방안:</strong> window에 Dim View를 추가하는 방법으로 해결했습니다. 구글링 결과, Dim View를 추가할 때, window 객체가 있는지 확인하고 있다면 addSuview 메소드를 이용하여 window에 Dim View를 추가한다는 걸 알게 되었습니다. 그래서 리뷰 화면을 띄우기 전에 이전 화면의 prepare 메소드에서 window에 Dim View를 추가하여 백그라운드 화면에 Dim View를 넣었습니다. 리뷰 화면이 닫힐 때는 close 메소드에서 notification을 보내고 이 notification을 이전 화면에서 받아 Dim Viwe를 super view에서 제거하도록 구현했습니다.</strong></p> <p>
+                                                              <strong>• 관련 코드:</strong><a href="https://wiggly-subway-73d.notion.site/Dim-View-00ed7720972a4ed0ae188df1d24a9078" target="_blank"> https://wiggly-subway-73d.notion.site/Dim-View-00ed7720972a4ed0ae188df1d24a9078</a></strong>
+                                                              </p>
                                                            </div>
                                                         </div>
                                                      </article>
@@ -356,11 +375,11 @@
                                                      
                                                      <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
                                                         <div class="timeline-entry-inner">
-                                                           <div class="timeline-icon color-2">
+                                                           <div class="timeline-icon color-1">
                                                               <i class="icon-pen2"></i>
                                                            </div>
                                                            <div class="timeline-label">
-                                                               <h2><a href="https://mittelstand.co.kr/" target="_blank">한 화면에서 탭 구분</a> </h2>
+                                                               <h2><a>한 화면에서 탭 구분</a> </h2>
                                                                <p><strong>• 문제:</strong> 가게 정보 화면에서 탭을 구분해서 출력하는 걸 구현하는 게 어려웠습니다.(정보탭과 리뷰탭)</p> <p>
                                                                <strong>• 해결 방안: </strong> 화면 탭 버튼을 하나의 메소드에 연결한 후 sender의 tag를 이용하는 방법으로 해결했습니다. sender의 tag를 서로 다르게 지정해서 해당하는 tag에 알맞은 정보를 Notification을 이용해서 보내고 그 정보를 하위 탭을 관리하는 테이블뷰 셀이 전달받아 처리하도록 구현했습니다.  </strong>
                                                                </p>
@@ -370,11 +389,11 @@
                                                      
                                                      <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
                                                         <div class="timeline-entry-inner">
-                                                           <div class="timeline-icon color-1">
+                                                           <div class="timeline-icon color-2">
                                                               <i class="icon-pen2"></i>
                                                            </div>
                                                            <div class="timeline-label">
-                                                               <h2><a href="https://mittelstand.co.kr/" target="_blank">가게 정보 필터링 기능</a> </h2>
+                                                               <h2><a>가게 정보 필터링 기능</a> </h2>
                                                                <p><strong>• 문제:</strong> 테이블뷰 셀에 선택된 필터링 항목을 뷰컨트롤러에 가져오는 과정에서 셀에 있는 데이터가 뷰컨트롤러로 잘 전달되지 않았습니다.</p> <p>
                                                                <strong>• 해결 방안: </strong> cellForRow(at:) 메소드를 이용해 해당 IndexPath에 있는 테이블뷰 셀을 가져온 후 셀에 접근해서 데이터를 가져오는 것으로 해결했습니다. 셀에 직접 접근해서 처리하는 것은 마지막 수단으로 남겨둬야 한다고 배웠습니다. 하지만 Notification, 델리게이트 패턴 등 여러 가지 방법을 시도해본 결과, 해결되지 않았기 때문에 직접 접근하는 방법을 사용했습니다. </strong>
                                                                </p>
